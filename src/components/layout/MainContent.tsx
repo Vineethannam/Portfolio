@@ -25,13 +25,13 @@ const MainContent: React.FC<MainContentProps> = ({ activeTab, handleTabChange })
       title: "Education",
       content: "My academic journey and qualifications."
     },
-    projects: {
-      title: "Projects",
-      content: "Showcase of my best work and achievements."
-    },
     experience: {
       title: "Experience",
       content: "My professional journey and skills."
+    },
+    projects: {
+      title: "Projects",
+      content: "Showcase of my best work and achievements."
     },
     mylife: {
       title: "My Life",
@@ -45,10 +45,10 @@ const MainContent: React.FC<MainContentProps> = ({ activeTab, handleTabChange })
     //   title: "Portfolio",
     //   content: "View my portfolio work."
     // },
-    blog: {
-      title: "Portfolio",
-      content: "View my portfolio work."
-    }
+    // blog: {
+    //   title: "Portfolio",
+    //   content: "View my portfolio work."
+    // }
   };
 
   return (
@@ -76,8 +76,8 @@ const MainContent: React.FC<MainContentProps> = ({ activeTab, handleTabChange })
       <div className="transition-opacity duration-300 ease-in-out">
         {activeTab === "home" && <HomeSection />}
         {activeTab === "education" && <EducationSection />}
-        {activeTab === "projects" && <ProjectsSection />}
         {activeTab === "experience" && <ExperienceSection />}
+        {activeTab === "projects" && <ProjectsSection />}
         {activeTab === "mylife" && <MyLifeSection />}
         {activeTab === "contact" && <ContactSection />}
         {/* {activeTab === "portfolio" && <PortfolioSection />} */}

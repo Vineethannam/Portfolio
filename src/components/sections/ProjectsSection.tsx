@@ -1,40 +1,44 @@
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import crm from '../assets/CRM.png'
+import skillhub from '../assets/skillhub.png'
+import infozit from '../assets/infozit.png'
 
 const ProjectsSection: React.FC = () => {
   return (
     <div className="bg-myColor rounded-xl p-6 mb-6">
       <div className="mb-8">
-        <h3 className="text-xl font-bold mb-6">Featured Projects</h3>
+        <h3 className="text-xl font-bold mb-6">Current Projects</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
           <Card className="bg-[#2a2a2a] border-none overflow-hidden">
             <CardContent className="p-0">
               <img
-                src="https://readdy.ai/api/search-image?query=modern%20financial%20dashboard%20UI%20design%20with%20dark%20theme%2C%20data%20visualization%20charts%2C%20analytics%20interface%20with%20purple%20and%20blue%20accents%2C%20professional%20fintech%20application%20mockup&width=600&height=400&seq=14&orientation=landscape"
+                src={crm}
                 alt="FinTrack Dashboard"
                 className="w-full h-56 object-cover"
               />
               <div className="p-5">
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-3">
-                  <h4 className="font-semibold text-lg mb-2 sm:mb-0">FinTrack Dashboard</h4>
+                  <h4 className="font-semibold text-lg mb-2 sm:mb-0">CRM</h4>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">UI/UX</span>
+                    <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">Leads Management</span>
                     <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">Dashboard</span>
                   </div>
                 </div>
                 <p className="text-sm text-myText mb-4">
-                  A comprehensive financial analytics dashboard designed for a leading fintech company. The interface provides real-time data visualization and intuitive user controls.
+                  Built a CRM system to streamline lead management, client communication, and sales tracking. Enabled businesses to manage customer data, assign leads, track interactions, and automate follow-ups for improved engagement and efficiency
                 </p>
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3">
                   <div className="flex flex-wrap gap-2">
                     <span className="px-2 py-1 bg-[#333333] rounded text-xs">React</span>
-                    <span className="px-2 py-1 bg-[#333333] rounded text-xs">D3.js</span>
-                    <span className="px-2 py-1 bg-[#333333] rounded text-xs">Figma</span>
+                    <span className="px-2 py-1 bg-[#333333] rounded text-xs">JavaScript</span>
+                    <span className="px-2 py-1 bg-[#333333] rounded text-xs">NodeJS</span>
+                    <span className="px-2 py-1 bg-[#333333] rounded text-xs">ShadCN</span>
                   </div>
-                  <Button variant="ghost" className="text-HeighLightColor hover:text-HeighLightDarkColor p-0 !rounded-button whitespace-nowrap cursor-pointer">
+                  <a href='https://crm.infozit.com/' target='_blank' className="text-HeighLightColor hover:text-HeighLightDarkColor p-0 !rounded-button whitespace-nowrap cursor-pointer">
                     View Details <i className="fas fa-arrow-right ml-2"></i>
-                  </Button>
+                  </a>
                 </div>
               </div>
             </CardContent>
@@ -43,30 +47,31 @@ const ProjectsSection: React.FC = () => {
           <Card className="bg-[#2a2a2a] border-none overflow-hidden">
             <CardContent className="p-0">
               <img
-                src="https://readdy.ai/api/search-image?query=mobile%20app%20UI%20design%20for%20fitness%20tracking%20application%2C%20dark%20theme%20with%20green%20accents%2C%20health%20monitoring%20screens%2C%20professional%20mobile%20interface%20design%20with%20workout%20tracking%20features&width=600&height=400&seq=15&orientation=landscape"
+                src={skillhub}
                 alt="FitLife Mobile App"
                 className="w-full h-56 object-cover"
               />
               <div className="p-5">
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-3">
-                  <h4 className="font-semibold text-lg mb-2 sm:mb-0">FitLife Mobile App</h4>
+                  <h4 className="font-semibold text-lg mb-2 sm:mb-0">Teks SkillHub</h4>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">Mobile</span>
-                    <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">App Design</span>
+                    <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">Web Application</span>
+                    <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">Education Platform</span>
                   </div>
                 </div>
                 <p className="text-sm text-myText mb-4">
-                  A fitness tracking mobile application with personalized workout plans, nutrition tracking, and social features. The design focuses on user engagement and motivation.
+                  Developed Teks SkillHub, an online learning platform that offers video-based courses, user enrollment, and progress tracking. Enables instructors to upload content and learners to access structured courses across various subjects with a smooth and responsive user experience.
                 </p>
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3">
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-2 py-1 bg-[#333333] rounded text-xs">Swift</span>
-                    <span className="px-2 py-1 bg-[#333333] rounded text-xs">Kotlin</span>
-                    <span className="px-2 py-1 bg-[#333333] rounded text-xs">Sketch</span>
+                    <span className="px-2 py-1 bg-[#333333] rounded text-xs">React</span>
+                    <span className="px-2 py-1 bg-[#333333] rounded text-xs">JavaScript</span>
+                    <span className="px-2 py-1 bg-[#333333] rounded text-xs">NodeJS</span>
+                    <span className="px-2 py-1 bg-[#333333] rounded text-xs">BootStrap</span>
                   </div>
-                  <Button variant="ghost" className="text-HeighLightColor hover:text-HeighLightDarkColor p-0 !rounded-button whitespace-nowrap cursor-pointer">
+                  <a href="https://teksskillhub.com/" target='_blank' className="text-HeighLightColor hover:text-HeighLightDarkColor p-0 !rounded-button whitespace-nowrap cursor-pointer">
                     View Details <i className="fas fa-arrow-right ml-2"></i>
-                  </Button>
+                  </a>
                 </div>
               </div>
             </CardContent>
@@ -81,25 +86,25 @@ const ProjectsSection: React.FC = () => {
             <CardContent className="p-0">
               <div className="relative group">
                 <img
-                  src="https://readdy.ai/api/search-image?query=e-commerce%20website%20design%20for%20luxury%20fashion%20brand%2C%20elegant%20dark%20interface%20with%20gold%20accents%2C%20product%20showcase%20page%2C%20professional%20web%20design%20for%20high-end%20retail&width=400&height=300&seq=16&orientation=landscape"
+                  src={infozit}
                   alt="Luxe E-commerce"
                   className="w-full h-48 object-cover"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
-                  <div className="text-center">
+                  <a href='https://infozit.com/' target='_blank' className="text-center">
                     <i className="fas fa-eye text-HeighLightColor text-2xl mb-2"></i>
                     <h4 className="text-myTextBig font-medium">View Project</h4>
-                  </div>
+                  </a>
                 </div>
               </div>
               <div className="p-4">
-                <h3 className="font-semibold mb-1">Luxe E-commerce</h3>
-                <p className="text-sm text-myText">Web Design</p>
+                <h3 className="font-semibold mb-1">InfozIT</h3>
+                <p className="text-sm text-myText">Wesite</p>
               </div>
             </CardContent>
           </Card>
           
-          <Card className="bg-[#2a2a2a] border-none overflow-hidden cursor-pointer">
+          {/* <Card className="bg-[#2a2a2a] border-none overflow-hidden cursor-pointer">
             <CardContent className="p-0">
               <div className="relative group">
                 <img
@@ -207,11 +212,11 @@ const ProjectsSection: React.FC = () => {
                 <p className="text-sm text-myText">Web Application</p>
               </div>
             </CardContent>
-          </Card>
+          </Card> */}
         </div>
       </div>
       
-      <div>
+      {/* <div>
         <h3 className="text-xl font-bold mb-6">Client Projects</h3>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
           <div className="bg-[#2a2a2a] rounded-xl p-5 flex flex-col items-center justify-center text-center cursor-pointer">
@@ -246,7 +251,7 @@ const ProjectsSection: React.FC = () => {
             <p className="text-xs text-myText mt-1">Driver App Interface</p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

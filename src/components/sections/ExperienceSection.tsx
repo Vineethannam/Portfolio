@@ -1,5 +1,7 @@
+//@ts-nocheck
+
 import React from 'react';
-import { Card, CardContent } from "@/components/ui/card";
+// import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 
 const ExperienceSection: React.FC = () => {
@@ -11,39 +13,41 @@ const ExperienceSection: React.FC = () => {
           <div className="relative pl-6 border-l-2 border-[#333333]">
             <div className="absolute w-3 h-3 bg-HeighLightColor rounded-full -left-[7px] top-1"></div>
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
-              <h4 className="font-semibold text-lg mb-2 sm:mb-0">Creative Director</h4>
+              <h4 className="font-semibold text-lg mb-2 sm:mb-0">Software Developer</h4>
               <span className="px-3 py-1 bg-[#333333] rounded-full text-xs inline-block sm:ml-2">Current</span>
             </div>
-            <p className="text-sm text-HeighLightColor mb-2">DesignHub Agency • 2020 - Present</p>
+            <p className="text-sm text-HeighLightColor mb-2">InfozIT Solutions • 2024 - Present</p>
             <p className="text-sm text-myText mb-4">
-              Leading a team of 15 designers and developers to create innovative digital experiences for global clients. Responsible for creative strategy, client presentations, and design direction.
+              As a React.js Developer, responsible for building and maintaining dynamic, responsive, and user-friendly web applications using the React JavaScript library. Focused on creating reusable components, optimizing performance, and delivering seamless user experiences. Collaborated closely with backend developers
             </p>
             <div className="bg-[#2a2a2a] rounded-lg p-4">
               <h5 className="text-sm font-medium mb-2">Key Responsibilities:</h5>
               <ul className="text-sm text-myText space-y-2 list-disc pl-5">
-                <li>Oversee all creative projects from concept to completion</li>
-                <li>Establish design standards and quality control processes</li>
-                <li>Mentor junior designers and provide professional development</li>
-                <li>Present creative concepts and strategies to C-level clients</li>
-                <li>Collaborate with marketing and development teams to ensure cohesive product delivery</li>
+                <li>Develop responsive web interfaces using React.js, JavaScript, HTML, and CSS.</li>
+                <li>Build and maintain reusable React components and front-end libraries</li>
+                <li>Integrate RESTful APIs and manage application state using tools like Redux or Context API.</li>
+                <li>Optimize components for maximum speed and scalability across various devices and browsers.</li>
+                <li>Collaborate with backend developers to ensure seamless data integration.</li>
+                <li>Use version control systems like Git to manage codebase.</li>
+                <li>Troubleshoot and debug issues, ensuring high-quality delivery.</li>
               </ul>
             </div>
             <div className="mt-4">
               <h5 className="text-sm font-medium mb-2">Notable Projects:</h5>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div className="bg-[#2a2a2a] rounded-lg p-3">
-                  <h6 className="text-sm font-medium mb-1">Global Finance App Redesign</h6>
-                  <p className="text-xs text-myText">Complete UX overhaul resulting in 45% increase in user engagement</p>
+                  <h6 className="text-sm font-medium mb-1">Customer Relationship Management (CRM)</h6>
+                  <p className="text-xs text-myText">Built a CRM system to streamline lead management, client communication, and sales tracking. Enabled businesses to manage customer data, assign leads, track interactions, and automate follow-ups for improved engagement and efficiency</p>
                 </div>
                 <div className="bg-[#2a2a2a] rounded-lg p-3">
-                  <h6 className="text-sm font-medium mb-1">Retail Brand Identity System</h6>
-                  <p className="text-xs text-myText">Comprehensive rebrand across digital and physical touchpoints</p>
+                  <h6 className="text-sm font-medium mb-1">Teks SkillHub</h6>
+                  <p className="text-xs text-myText">Developed Teks SkillHub, an online learning platform that offers video-based courses, user enrollment, and progress tracking. Enables instructors to upload content and learners to access structured courses across various subjects with a smooth and responsive user experience.</p>
                 </div>
               </div>
             </div>
           </div>
           
-          <div className="relative pl-6 border-l-2 border-[#333333]">
+          {/* <div className="relative pl-6 border-l-2 border-[#333333]">
             <div className="absolute w-3 h-3 bg-HeighLightColor rounded-full -left-[7px] top-1"></div>
             <h4 className="font-semibold text-lg">Senior UI/UX Designer</h4>
             <p className="text-sm text-HeighLightColor mb-2">TechVision Inc. • 2016 - 2020</p>
@@ -82,41 +86,13 @@ const ExperienceSection: React.FC = () => {
                 <li>FinanceFlow - Investment tracking dashboard</li>
               </ul>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       
       <div className="mb-10">
         <h3 className="text-xl font-bold mb-6">Skills & Expertise</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-6 mb-8">
-          <div>
-            <div className="flex justify-between mb-2">
-              <span className="font-medium">UI/UX Design</span>
-              <span className="text-HeighLightColor">95%</span>
-            </div>
-            <Progress value={95} className="h-2 bg-[#333333]" indicatorClassName="bg-HeighLightColor" />
-          </div>
-          <div>
-            <div className="flex justify-between mb-2">
-              <span className="font-medium">Web Design</span>
-              <span className="text-HeighLightColor">90%</span>
-            </div>
-            <Progress value={90} className="h-2 bg-[#333333]" indicatorClassName="bg-HeighLightColor" />
-          </div>
-          <div>
-            <div className="flex justify-between mb-2">
-              <span className="font-medium">Mobile App Design</span>
-              <span className="text-HeighLightColor">88%</span>
-            </div>
-            <Progress value={88} className="h-2 bg-[#333333]" indicatorClassName="bg-HeighLightColor" />
-          </div>
-          <div>
-            <div className="flex justify-between mb-2">
-              <span className="font-medium">Brand Identity</span>
-              <span className="text-HeighLightColor">85%</span>
-            </div>
-            <Progress value={85} className="h-2 bg-[#333333]" indicatorClassName="bg-HeighLightColor" />
-          </div>
           <div>
             <div className="flex justify-between mb-2">
               <span className="font-medium">Front-End Development</span>
@@ -126,15 +102,43 @@ const ExperienceSection: React.FC = () => {
           </div>
           <div>
             <div className="flex justify-between mb-2">
-              <span className="font-medium">Design Systems</span>
-              <span className="text-HeighLightColor">92%</span>
+              <span className="font-medium">Back-End Development</span>
+              <span className="text-HeighLightColor">50%</span>
             </div>
-            <Progress value={92} className="h-2 bg-[#333333]" indicatorClassName="bg-HeighLightColor" />
+            <Progress value={50} className="h-2 bg-[#333333]" indicatorClassName="bg-HeighLightColor" />
+          </div>
+          <div>
+            <div className="flex justify-between mb-2">
+              <span className="font-medium">JavaScript</span>
+              <span className="text-HeighLightColor">68%</span>
+            </div>
+            <Progress value={68} className="h-2 bg-[#333333]" indicatorClassName="bg-HeighLightColor" />
+          </div>
+          <div>
+            <div className="flex justify-between mb-2">
+              <span className="font-medium">Java</span>
+              <span className="text-HeighLightColor">50%</span>
+            </div>
+            <Progress value={50} className="h-2 bg-[#333333]" indicatorClassName="bg-HeighLightColor" />
+          </div>
+          <div>
+            <div className="flex justify-between mb-2">
+              <span className="font-medium">HTML</span>
+              <span className="text-HeighLightColor">85%</span>
+            </div>
+            <Progress value={85} className="h-2 bg-[#333333]" indicatorClassName="bg-HeighLightColor" />
+          </div>
+          <div>
+            <div className="flex justify-between mb-2">
+              <span className="font-medium">ReactJS</span>
+              <span className="text-HeighLightColor">72%</span>
+            </div>
+            <Progress value={72} className="h-2 bg-[#333333]" indicatorClassName="bg-HeighLightColor" />
           </div>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="bg-[#2a2a2a] rounded-xl p-4">
+          {/* <div className="bg-[#2a2a2a] rounded-xl p-4">
             <h4 className="font-semibold mb-3 flex items-center">
               <i className="fas fa-pencil-ruler text-HeighLightColor mr-2"></i> Design Tools
             </h4>
@@ -146,7 +150,7 @@ const ExperienceSection: React.FC = () => {
               <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">Illustrator</span>
               <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">InVision</span>
             </div>
-          </div>
+          </div> */}
           
           <div className="bg-[#2a2a2a] rounded-xl p-4">
             <h4 className="font-semibold mb-3 flex items-center">
@@ -158,6 +162,7 @@ const ExperienceSection: React.FC = () => {
               <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">JavaScript</span>
               <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">React</span>
               <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">Tailwind</span>
+              <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">ShadCN</span>
               <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">Git</span>
             </div>
           </div>
@@ -169,14 +174,14 @@ const ExperienceSection: React.FC = () => {
             <div className="flex flex-wrap gap-2">
               <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">Team Leadership</span>
               <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">Client Communication</span>
-              <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">Project Management</span>
+              {/* <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">Debugging</span> */}
               <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">Mentoring</span>
             </div>
           </div>
         </div>
       </div>
       
-      <div>
+      {/* <div>
         <h3 className="text-xl font-bold mb-6">Awards & Recognition</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <Card className="bg-[#2a2a2a] border-none">
@@ -218,7 +223,7 @@ const ExperienceSection: React.FC = () => {
             </CardContent>
           </Card>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
