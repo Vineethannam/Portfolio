@@ -9,7 +9,7 @@ interface SidebarProps {
 
 const Sidebar: React.FC<SidebarProps> = ({ onClose }) => {
   return (
-    <div className="p-6 w-full h-full md:h-auto overflow-y-auto">
+    <div className="p-6 w-full h-full md:h-auto md:sticky md:top-0 overflow-y-auto">
       {/* Close button for mobile */}
       <div className="md:hidden flex justify-end mb-4">
         <Button variant="ghost" className="text-myTextBig hover:bg-[#333333]" onClick={onClose}>
@@ -67,16 +67,16 @@ const Sidebar: React.FC<SidebarProps> = ({ onClose }) => {
         </div>
       </div>
       <div className="flex justify-center space-x-3 mt-auto">
-        <a href="#" className="w-8 h-8 rounded-full bg-[#333333] flex items-center justify-center cursor-pointer transition-transform duration-300 hover:scale-110">
+        <a href="https://leetcode.com/u/Annam_Vineeth/" target='_blank' className="w-8 h-8 rounded-full bg-[#333333] flex items-center justify-center cursor-pointer transition-transform duration-300 hover:scale-110">
           <img src={leedCode} className='w-6 h-6'/>
         </a>
-        <a href="#" className="w-8 h-8 rounded-full bg-[#333333] flex items-center justify-center cursor-pointer transition-transform duration-300 hover:scale-110">
-          <i className="fab fa-facebook-f text-white hover:text-HeighLightColor"></i>
+        <a href="https://github.com/Vineethannam" target='_blank' className="w-8 h-8 rounded-full bg-[#333333] flex items-center justify-center cursor-pointer transition-transform duration-300 hover:scale-110">
+         <i className="fa-brands text-white fa-github"></i>
         </a>
-        <a href="#" className="w-8 h-8 rounded-full bg-[#333333] flex items-center justify-center cursor-pointer transition-transform duration-300 hover:scale-110">
-          <i className="fab fa-instagram text-myText hover:text-HeighLightColor"></i>
+        <a href="mailto:vineethannam6@gmail.com" className="w-8 h-8 rounded-full bg-[#333333] flex items-center justify-center cursor-pointer transition-transform duration-300 hover:scale-110">
+          <i className="fa-solid fa-envelope text-myText hover:text-HeighLightColor"></i>
         </a>
-        <a href="#" className="w-8 h-8 rounded-full bg-blue-400 flex items-center justify-center cursor-pointer transition-transform duration-300 hover:scale-110">
+        <a href="https://www.linkedin.com/in/vineeth-annam-55712a207/" target='_blank' className="w-8 h-8 rounded-full bg-blue-400 flex items-center justify-center cursor-pointer transition-transform duration-300 hover:scale-110">
           <i className="fab fa-linkedin-in text-white "></i>
         </a>
       </div>
