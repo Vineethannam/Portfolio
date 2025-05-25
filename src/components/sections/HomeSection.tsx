@@ -32,7 +32,7 @@ const HomeSection: React.FC = () => {
             <i className="fas fa-code text-HeighLightColor text-xl"></i>
           </div>
           <div>
-            <h4 className="text-lg font-semibold mb-2">Web Development</h4>
+            <h4 className="text-lg font-semibold mb-2">Backend Development</h4>
             <p className="text-sm text-myText"> I build scalable, secure server-side solutions using Java Spring Boot and MySQL. My backend work focuses on creating high-performance REST APIs, implementing robust authentication (JWT/OAuth), and designing efficient database structures with proper indexing and query optimization. I ensure maintainable code and optimize application performance through caching strategies and connection pooling. My solutions emphasize data integrity, security best practices, and seamless integration with frontend systems.</p>
           </div>
         </div>
