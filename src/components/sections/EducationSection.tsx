@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const EducationSection: React.FC = () => {
   return (
-    <div className="bg-myColor rounded-xl p-6 mb-6">
+    <div className="bg-myColor rounded-xl p-6">
       <div className="mb-10">
         <h3 className="text-xl font-bold mb-6">My Education Journey</h3>
         <div className="space-y-8">

@@ -3,11 +3,11 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const HomeSection: React.FC = () => {
   return (
-    <div className="bg-myColor rounded-xl p-6 mb-6">
+    <div className="bg-myColor rounded-xl p-6">
       <div className="mb-10">
         <p className="text-gray-300 mb-6">
           <span className="text-4xl font-bold">Hello, <br />This is <span className=' text-HeighLightColor'>Vineeth Annam</span> <br />I'm a Professional Software Developer.</span> <br/>
-          Full-Stack Developer | React + TypeScript | Java Spring | MySQL
+          Full-Stack Developer | React + TypeScript | React Router | Java Spring | MySQL
           I build fast, scalable web apps with:
            Frontend: React, JavaScript/TypeScript - Clean, responsive UIs.
            Backend: Java Spring Boot - Secure REST APIs.
@@ -24,7 +24,7 @@ const HomeSection: React.FC = () => {
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-2">Frontend Development</h4>
-            <p className="text-sm text-myText">I specialize in building high-performance, responsive web applications using React.js, TypeScript, and modern JavaScript (ES6+). With a focus on clean, maintainable code, I develop dynamic user interfaces with reusable components, efficient state management (Redux/Context API), and pixel-perfect styling using CSS3, Flexbox, and Tailwind/Material-UI. I prioritize optimized performance (code splitting, lazy loading) and rigorous testing (Jest) to ensure seamless, bug-free experiences across all devices. My workflow leverages tools like Vite, Webpack, and Git for streamlined development and collaboration.</p>
+            <p className="text-sm text-myText">I specialize in building high-performance, responsive web applications using React.js, TypeScript, and modern JavaScript (ES6+). With a focus on clean, maintainable code, I develop dynamic user interfaces with reusable components, efficient state management (Context API), and pixel-perfect styling using CSS3, Flexbox, and Tailwind/Material-UI. I prioritize optimized performance (code splitting, lazy loading) and rigorous testing (Jest) to ensure seamless, bug-free experiences across all devices. My workflow leverages tools like Vite, Webpack, and Git for streamlined development and collaboration.</p>
           </div>
         </div>
         <div className="bg-[#2a2a2a] rounded-xl p-6 flex">

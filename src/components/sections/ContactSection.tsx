@@ -5,7 +5,7 @@ import { Separator } from "@/components/ui/separator";
 
 const ContactSection: React.FC = () => {
   return (
-    <div className="bg-myColor rounded-xl p-6 mb-6">
+    <div className="bg-myColor rounded-xl p-6">
       <div className="mb-8">
         <div className="w-full h-[400px] rounded-xl overflow-hidden mb-6">
           <iframe

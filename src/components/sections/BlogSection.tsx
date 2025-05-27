@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const BlogSection: React.FC = () => {
   return (
-    <div className="bg-myColor rounded-xl p-6 mb-6">
+    <div className="bg-myColor rounded-xl p-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <Card className="bg-[#2a2a2a] border-none overflow-hidden cursor-pointer">
           <CardContent className="p-0">

@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const MyLifeSection: React.FC = () => {
   return (
-    <div className="bg-myColor rounded-xl p-6 mb-6">
+    <div className="bg-myColor rounded-xl p-6">
       <div className="mb-10">
         <h3 className="text-xl font-bold mb-6">Personal Interests</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">

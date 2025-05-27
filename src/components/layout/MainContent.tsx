@@ -21,10 +21,6 @@ const MainContent: React.FC<MainContentProps> = ({ activeTab, handleTabChange })
       title: "Home",
       content: "Welcome to my portfolio! I'm a passionate web developer and designer."
     },
-    education: {
-      title: "Education",
-      content: "My academic journey and qualifications."
-    },
     experience: {
       title: "Experience",
       content: "My professional journey and skills."
@@ -32,6 +28,10 @@ const MainContent: React.FC<MainContentProps> = ({ activeTab, handleTabChange })
     projects: {
       title: "Projects",
       content: "Showcase of my best work and achievements."
+    },
+    education: {
+      title: "Education",
+      content: "My academic journey and qualifications."
     },
     mylife: {
       title: "My Life",
@@ -53,7 +53,7 @@ const MainContent: React.FC<MainContentProps> = ({ activeTab, handleTabChange })
 
   return (
     <div className="flex-1 w-full">
-      <div className="bg-myColor rounded-xl p-6 mb-6 sticky top-0 z-10">
+      <div className="bg-myColor rounded-xl p-6 sticky top-0 z-10">
         <div className="flex flex-col md:flex-row md:justify-between md:items-center">
           <h1 className="text-2xl font-bold mb-4 md:mb-0">{sections[activeTab as keyof typeof sections].title}</h1>
           <div className="flex flex-wrap gap-2 md:gap-4">
@@ -73,7 +73,7 @@ const MainContent: React.FC<MainContentProps> = ({ activeTab, handleTabChange })
         </div>
       </div>
       
-      <div className="transition-opacity duration-300 ease-in-out">
+      <div className="transition-opacity duration-300 ease-in-out h-[80vh] mt-4 rounded-xl overflow-auto">
         {activeTab === "home" && <HomeSection />}
         {activeTab === "education" && <EducationSection />}
         {activeTab === "experience" && <ExperienceSection />}

@@ -15,7 +15,7 @@ const Layout = () => {
 
   return (
     <div className="min-h-screen bg-[#1a1a1a] text-myTextBig font-sans">
-      <div className="max-w-[1440px] mx-auto px-4 md:px-6 py-8">
+      <div className="w-full mx-auto px-4 md:px-6 py-8">
         {/* Mobile Menu Button */}
         <div className="md:hidden mb-4">
           <Button

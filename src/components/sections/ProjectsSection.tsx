@@ -7,7 +7,7 @@ import infozit from '../assets/infozit.png'
 
 const ProjectsSection: React.FC = () => {
   return (
-    <div className="bg-myColor rounded-xl p-6 mb-6">
+    <div className="bg-myColor rounded-xl p-6">
       <div className="mb-8">
         <h3 className="text-xl font-bold mb-6">Current Projects</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">

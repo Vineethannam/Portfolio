@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const PortfolioSection: React.FC = () => {
   return (
-    <div className="bg-myColor rounded-xl p-6 mb-6">
+    <div className="bg-myColor rounded-xl p-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 col-span-1 md:col-span-2">
             <Card className="bg-[#2a2a2a] border-none overflow-hidden cursor-pointer">

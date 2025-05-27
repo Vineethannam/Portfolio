@@ -6,26 +6,50 @@ import { Progress } from "@/components/ui/progress";
 
 const ExperienceSection: React.FC = () => {
   return (
-    <div className="bg-myColor rounded-xl p-6 mb-6">
+    <div className="bg-myColor rounded-xl p-6">
       <div className="mb-10">
         <h3 className="text-xl font-bold mb-6">Professional Experience</h3>
         <div className="space-y-8">
+
+          <div className="relative pl-6 border-l-2 border-[#333333]">
+            <div className="absolute w-3 h-3 bg-HeighLightColor rounded-full -left-[7px] top-1"></div>
+            <h4 className="font-semibold text-lg">Internship as a Software Developer</h4>
+            <p className="text-sm text-HeighLightColor mb-2">InfozIT Solutions • Aug 2024 - Nov 2024</p>
+            <p className="text-sm text-myText mb-4">
+              During my internship as a Software Developer, I primarily worked on frontend development using technologies like ReactJS, Tailwind CSS, and ShadCN. I collaborated with the development team to build responsive, modern user interfaces. My responsibilities included creating reusable components, integrating APIs, and optimizing user experience across different devices. 
+            </p>
+            <div className="bg-[#2a2a2a] rounded-lg p-4">
+              <h5 className="text-sm font-medium mb-2">Key Achievements:</h5>
+              <ul className="text-sm text-myText space-y-2 list-disc pl-5">
+                <li>Built responsive and accessible UI components using ReactJS, Tailwind CSS, and ShadCN UI. </li>
+                <li>Integrated frontend components with backend APIs to display real-time data.</li>
+                <li>Used Git and GitHub for version control and collaborative development</li>
+              </ul>
+            </div>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">ReactJS</span>
+              <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">Tailwind CSS</span>
+              <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">ShadCN</span>
+            </div>
+          </div>
+
           <div className="relative pl-6 border-l-2 border-[#333333]">
             <div className="absolute w-3 h-3 bg-HeighLightColor rounded-full -left-[7px] top-1"></div>
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
               <h4 className="font-semibold text-lg mb-2 sm:mb-0">Software Developer</h4>
               <span className="px-3 py-1 bg-[#333333] rounded-full text-xs inline-block sm:ml-2">Current</span>
             </div>
-            <p className="text-sm text-HeighLightColor mb-2">InfozIT Solutions • 2024 - Present</p>
+            <p className="text-sm text-HeighLightColor mb-2">InfozIT Solutions • Nov 2024 - Present</p>
             <p className="text-sm text-myText mb-4">
               As a React.js Developer, responsible for building and maintaining dynamic, responsive, and user-friendly web applications using the React JavaScript library. Focused on creating reusable components, optimizing performance, and delivering seamless user experiences. Collaborated closely with backend developers
             </p>
             <div className="bg-[#2a2a2a] rounded-lg p-4">
               <h5 className="text-sm font-medium mb-2">Key Responsibilities:</h5>
               <ul className="text-sm text-myText space-y-2 list-disc pl-5">
+                <li>Implementing client-side routing and navigation using React Router for seamless user experience.</li>
                 <li>Develop responsive web interfaces using React.js, JavaScript, HTML, and CSS.</li>
                 <li>Build and maintain reusable React components and front-end libraries</li>
-                <li>Integrate RESTful APIs and manage application state using tools like Redux or Context API.</li>
+                <li>Integrate RESTful APIs and manage application state using tools like Context API.</li>
                 <li>Optimize components for maximum speed and scalability across various devices and browsers.</li>
                 <li>Collaborate with backend developers to ensure seamless data integration.</li>
                 <li>Use version control systems like Git to manage codebase.</li>
@@ -49,30 +73,6 @@ const ExperienceSection: React.FC = () => {
           
           {/* <div className="relative pl-6 border-l-2 border-[#333333]">
             <div className="absolute w-3 h-3 bg-HeighLightColor rounded-full -left-[7px] top-1"></div>
-            <h4 className="font-semibold text-lg">Senior UI/UX Designer</h4>
-            <p className="text-sm text-HeighLightColor mb-2">TechVision Inc. • 2016 - 2020</p>
-            <p className="text-sm text-myText mb-4">
-              Led design initiatives for enterprise software products and client projects. Specialized in creating intuitive interfaces for complex data visualization systems.
-            </p>
-            <div className="bg-[#2a2a2a] rounded-lg p-4">
-              <h5 className="text-sm font-medium mb-2">Key Achievements:</h5>
-              <ul className="text-sm text-myText space-y-2 list-disc pl-5">
-                <li>Redesigned flagship analytics platform, increasing user retention by 32%</li>
-                <li>Implemented design system that reduced development time by 40%</li>
-                <li>Led UX research initiatives that informed product roadmap</li>
-                <li>Mentored team of 5 junior designers</li>
-              </ul>
-            </div>
-            <div className="mt-4 flex flex-wrap gap-3">
-              <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">Figma</span>
-              <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">Adobe XD</span>
-              <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">Sketch</span>
-              <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">InVision</span>
-            </div>
-          </div>
-          
-          <div className="relative pl-6 border-l-2 border-[#333333]">
-            <div className="absolute w-3 h-3 bg-HeighLightColor rounded-full -left-[7px] top-1"></div>
             <h4 className="font-semibold text-lg">UI Designer</h4>
             <p className="text-sm text-HeighLightColor mb-2">CreativeWorks Studio • 2014 - 2016</p>
             <p className="text-sm text-myText mb-4">
@@ -92,7 +92,7 @@ const ExperienceSection: React.FC = () => {
       
       <div className="mb-10">
         <h3 className="text-xl font-bold mb-6">Skills & Expertise</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-6 mb-8">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-6 mb-8">
           <div>
             <div className="flex justify-between mb-2">
               <span className="font-medium">Front-End Development</span>
@@ -135,7 +135,7 @@ const ExperienceSection: React.FC = () => {
             </div>
             <Progress value={72} className="h-2 bg-[#333333]" indicatorClassName="bg-HeighLightColor" />
           </div>
-        </div>
+        </div> */}
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {/* <div className="bg-[#2a2a2a] rounded-xl p-4">
@@ -157,10 +157,13 @@ const ExperienceSection: React.FC = () => {
               <i className="fas fa-code text-HeighLightColor mr-2"></i> Development
             </h4>
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">HTML5</span>
-              <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">CSS3/SASS</span>
-              <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">JavaScript</span>
               <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">React</span>
+              <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">Java</span>
+              <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">Spring Boot</span>
+              <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">JavaScript</span>
+              <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">React Router</span>
+              <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">HTML5</span>
+              <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">CSS3</span>
               <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">Tailwind</span>
               <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">ShadCN</span>
               <span className="px-3 py-1 bg-[#333333] rounded-full text-xs">Git</span>
